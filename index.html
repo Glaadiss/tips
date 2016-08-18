@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -16,9 +17,12 @@
 
 
   <div id="page_1" class="page">
-    <div class="container alert dark welcome">
-      <h2> Witaj <span id="facebook_name"></span>! Stworzyliśmy te aplikację by móc szybko udzielić Ci porad suplementacyjnych, dietetycznych i treningowych. Porady naszych ekspertów są darmowe!</h2>
-      <button class="btn light btn-lg next"> Dalej </button>
+    <div class="container alert dark welcome" style="z-index: -5;">
+      <div class="hh">
+        <h2> Witaj <span id="facebook_name"></span>!</h2> <h2>Stworzyliśmy te aplikację by móc szybko udzielić Ci porad suplementacyjnych, dietetycznych i treningowych.</h2> <h2> Porady naszych ekspertów są darmowe!</h2>
+      </div>
+      <br>
+      <button class="btn light btn-lg next">  <h2>Przejdź dalej</h2></button>
     </div>
   </div>
   <div id="page_2" class="page light">
@@ -31,7 +35,8 @@
     </div>
     <div id="hint">
       <h2> Wybierz jedną z powyższych kategorii.</h2>
-      <i> Zawsze możesz kliknąć na inną, wybierając jeden z przycisków w nawigacji na samej górze.</i>
+      <p><i> Zawsze możesz kliknąć na inną, wybierając jeden z przycisków w nawigacji na samej górze.</i></p>
+      <img src="qwe2.jpg" alt="qwe">
     </div>
     <div id="content">
       <div id="dieta" class="tab">
