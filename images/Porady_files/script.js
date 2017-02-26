@@ -18,6 +18,7 @@ $(document).ready(function(){
      function onLogin(response) {
        if (response.status == 'connected') {
          FB.api('/me?fields=id,name,first_name,birthday,gender,age_range,email', function(data) {
+           console.log(data);
            gender = data.gender;
            age= data.age_range;
            name= data.first_name;
@@ -82,6 +83,7 @@ $(document).ready(function(){
   });
 
   $('.trening').on('click',function(){
+    console.log('dsadas');
     $('.btn-s').css("background-color", "white");
     $('.trening').css("background-color", "yellow");
     $('.page').fadeOut().after(function(){
@@ -94,7 +96,6 @@ $(document).ready(function(){
 
     })
   });
-
   $('.supl').on('click',function(){
     $('.btn-s').css("background-color", "white");
     $('.supl').css("background-color", "yellow");
@@ -125,10 +126,8 @@ $(document).ready(function(){
     }
   });
 
-  $('.create-ask-button').on('click', function(){
-      $('.pyt').css('color', 'white');
-      $('.btn-s').css("background-color", "white");
-      $('.page').fadeOut().after(function(){
+  $('.form_btn').on('click', function(){
+    $('.page').fadeOut().after(function(){
       setTimeout(function(){
         $('#page_3').slideDown('slow');
       },500);
